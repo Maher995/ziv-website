@@ -1,0 +1,7 @@
+.contact {
+  text-align: left;
+  padding: 0;
+}
+.contact * {
+  margin: 3px;
+}
