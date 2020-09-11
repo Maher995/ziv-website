@@ -1,11 +1,29 @@
-.about-img {
-    width: 300px;
-    position: relative;
-    justify-self: center;
-    justify-content: center;
-    float: right;
-  }
+.friends {
+  margin: 2rem 2rem;
+  padding: 0rem 0rem;
+  display: grid;
+  grid-template-rows: 20rem;
+  grid-template-columns: 50rem 1fr;
+  grid-template-areas: "friends-info friends-img";
+  position: relative;
+  justify-content: center;
+}
+
+.friends-info {
+  grid-area: friends-info;
+  margin: 1rem 0rem;
+  margin-left: 2rem;
+  padding: 0rem 0rem;
+}
+
+.friends-img {
+  grid-area: friends-img;
+  width: 300px;
+  position: relative;
+  justify-self: center;
+  justify-content: center;
+  /* float: right; */
+}
 
 .container {
-    
 }

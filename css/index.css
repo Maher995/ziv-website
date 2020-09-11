@@ -1,21 +1,14 @@
-.p1 {
-  display: flex;
+.birthday-card {
   position: relative;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  margin: 5rem 21rem;
-  top: 1rem;
+  padding: 0rem 0rem;
+  margin: 0rem 0rem;
+  width: 60rem;
+  left: 8rem;
+  top: 2rem;
+  /* background-color: blue; */
 }
 
-.birthday {
-  position: relative;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
-
-.birthday img {
+.birthday-card img {
   position: relative;
   width: 47em;
   height: 46em;
@@ -23,12 +16,62 @@
 }
 
 .p1 {
+  position: absolute;
   font-family: "Amatic SC", cursive;
-  position: relative;
-  color: black;
-  top: -29em;
-  left: 34px;
-  margin: 5em 17em;
+  color: rgb(0, 0, 0);
+  top: 15em;
+  left: 5em;
+  margin: 0rem 0px;
+  padding: 0px 96px;
   font-size: 20px;
   font-weight: bolder;
+  /* background-color: hotpink; */
+  width: 30em;
+  align-self: center;
+  text-align: center;
 }
+
+.img-container-wrapper {
+  margin: 10rem 0rem;
+  width: 69rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 3rem;
+  /* background-color: gold; */
+}
+
+.img-container {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "img1 img2 img3";
+  position: relative;
+  margin: 2rem 6rem;
+  padding: 0px 0px;
+  bottom: 0rem;
+  top: 1rem;
+  left: 1rem;
+  right: 0rem;
+}
+
+.img1 {
+  grid-area: img1;
+  margin: 0.1rem 2rem;
+  padding: 0px 0px;
+  background-color: blueviolet;
+}
+.img2 {
+  grid-area: img2;
+  margin: 0.1rem 2rem;
+  padding: 0px 0px;
+  background-color: cyan;
+}
+.img3 {
+  grid-area: img3;
+  margin: 0.1rem 2rem;
+  padding: 0px 0px;
+  background-color: darkorange;
+}
+
