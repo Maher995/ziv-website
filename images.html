@@ -5,38 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>images</title>
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="./css/images.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <style>
-      .mySlides {display:none}
-      .w3-left, .w3-right, .w3-badge {cursor:pointer}
-      .w3-badge {height:13px;width:13px;padding:0}
-      </style>
+      .mySlides {
+        display: none;
+      }
+      .w3-left,
+      .w3-right,
+      .w3-badge {
+        cursor: pointer;
+      }
+      .w3-badge {
+        height: 13px;
+        width: 13px;
+        padding: 0;
+      }
+    </style>
   </head>
 
   <body class="main">
+    <div class="navbar">
+      <div class="pageName"><h3 id="title">Images</h3></div>
+      <ul class="navbar-btn-container">
+        <li><a href="./index.html" class="navbar-btn"> Home Page </a></li>
+        <li><a href="./about.html" class="navbar-btn"> About </a></li>
+        <li><a href="./friends.html" class="navbar-btn">Friends</a></li>
+        <li><a href="./images.html" class="navbar-btn">Images</a></li>
+        <li><a href="./contact.html" class="navbar-btn">Contact</a></li>
+      </ul>
+    </div>
 
-      <div class="navbar">
-        <div class="pageName"><h3 id="title">Images</h3></div>
-        <ul class="navbar-btn-container">
-          <li><a href="./index.html" class="navbar-btn"> Home Page </a></li>
-          <li><a href="./about.html" class="navbar-btn"> About </a></li>
-          <li><a href="./friends.html" class="navbar-btn">Friends</a></li>
-          <li><a href="./images.html" class="navbar-btn">Images</a></li>
-          <li><a href="./contact.html" class="navbar-btn">Contact</a></li>
-        </ul>
+    <div class="PageContent">
+      <div class="par">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+          veritatis aliquid laborum quo. Expedita ipsam id beatae vero, fugiat
+          optio quia possimus inventore repudiandae alias debitis corporis
+          mollitia accusamus eum!
+        </p>
       </div>
 
-      <div class="PageContent">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
-          dignissimos cumque saepe ipsa, nemo voluptate esse pariatur eligendi
-          maiores nobis dolores? Deserunt, voluptatem qui quasi aliquam ratione
-          ea. Voluptatem, odio.
-        </p>
-
+      <div class="Slideshow">
         <div class="w3-content w3-display-container" style="max-width: 800px">
-          <img class="mySlides" src="./img/imgs/Slideshow1.jpg" style="width: 100%" />
-          <img class="mySlides" src="./img/imgs/Slideshow2.jpg" style="width: 100%" />
+          <img
+            class="mySlides"
+            src="./img/imgs/Slideshow1.jpg"
+            style="width: 100%"
+          />
+          <img
+            class="mySlides"
+            src="./img/imgs/Slideshow2.jpg"
+            style="width: 100%"
+          />
           <img
             class="mySlides"
             src="./img/imgs/Slideshow3.jpg"
@@ -70,35 +91,36 @@
         <script>
           var slideIndex = 1;
           showDivs(slideIndex);
-          
+
           function plusDivs(n) {
-            showDivs(slideIndex += n);
+            showDivs((slideIndex += n));
           }
-          
+
           function currentDiv(n) {
-            showDivs(slideIndex = n);
+            showDivs((slideIndex = n));
           }
-          
+
           function showDivs(n) {
             var i;
             var x = document.getElementsByClassName("mySlides");
             var dots = document.getElementsByClassName("demo");
-            if (n > x.length) {slideIndex = 1}
-            if (n < 1) {slideIndex = x.length}
+            if (n > x.length) {
+              slideIndex = 1;
+            }
+            if (n < 1) {
+              slideIndex = x.length;
+            }
             for (i = 0; i < x.length; i++) {
-              x[i].style.display = "none";  
+              x[i].style.display = "none";
             }
             for (i = 0; i < dots.length; i++) {
               dots[i].className = dots[i].className.replace(" w3-white", "");
             }
-            x[slideIndex-1].style.display = "block";  
-            dots[slideIndex-1].className += " w3-white";
+            x[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " w3-white";
           }
-          </script>
-
-
-
+        </script>
       </div>
-
+    </div>
   </body>
 </html>

@@ -1,0 +1,13 @@
+.Slideshow {
+  position: relative;
+  margin: 1rem 1rem;
+  top: 2rem;
+}
+
+.par {
+    position: relative;
+    margin: 1rem 1rem;
+    width: 47rem;
+    top: 1rem;
+    left: 19rem;
+}
