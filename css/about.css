@@ -1,9 +1,11 @@
 .PageContent {
   justify-content: center;
   display: grid;
-  grid-template-columns: 30% 1fr;
+  grid-template-columns: 45rem 1fr;
   grid-template-areas: "about-content about-content-img";
   position: relative;
+  left: 5rem;
+  top: 2rem;
 }
 
 .about-content {
@@ -12,20 +14,23 @@
   align-self: center;
   align-content: center;
   position: relative;
+  left: 5rem;
+  top: 2rem;
 }
 
 .about-content-img {
   grid-area: about-content-img;
   text-align: center;
-  align-self: center;
-  align-content: center;
+  position: relative;
+  margin-left: 2rem;
 }
 
 .about-img {
   width: 300px;
-  position: relative;
-  justify-self: center;
-  justify-content: center;
+  position: absolute;
+  /* justify-self: center; */
+  /* justify-content: center; */
+  left: 6rem;
 }
 
 /* image contaner */
