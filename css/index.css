@@ -138,3 +138,14 @@
   color: white;
   transform: rotateY(180deg);
 }
+
+.video-card {
+  position: absolute;
+  display: flex;
+  /* text-align: center; */
+  /* align-content: center; */
+  width: 266px;
+  height: 251px;
+  top: 6%;
+  left: 6%;
+}
