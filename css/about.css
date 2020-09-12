@@ -14,15 +14,20 @@
   align-self: center;
   align-content: center;
   position: relative;
-  left: 5rem;
+  left: 3rem;
   top: 2rem;
+  width: 400px;
+}
+
+.about-content p{
+  width: 400px;
 }
 
 .about-content-img {
   grid-area: about-content-img;
   text-align: center;
   position: relative;
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 
 .about-img {
