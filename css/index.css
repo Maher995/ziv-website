@@ -1,46 +1,58 @@
-.birthday-card {
+/* .birthday-card {
   position: relative;
   padding: 0rem 0rem;
-  margin: 0rem 0rem;
-  width: 60rem;
+  margin: 0rem auto;
+  width: 50%;
   left: 15rem;
   top: 0rem;
-  /* background-color: blue; */
+  max-width: 60rem;
+  background-color: blue;
 }
 
 .birthday-card img {
   position: relative;
-  width: 47em;
-  height: 46em;
+  width: 100%;
+  height: 100%;
   top: 2em;
+} */
+
+.birthday-card {
+  background: url("../img/HomePage/birthday-frame.png");
+  position: relative;
+  margin: 2rem auto;
+  width: 512px;
+  height: 500px;
+  /* left: 15rem; */
+  /* top: 0rem; */
+  max-width: 60rem;
+  border: 3px solid whitesmoke;
 }
 
 .p1 {
   position: absolute;
   font-family: "Amatic SC", cursive;
   color: rgb(0, 0, 0);
-  top: 15em;
-  left: 5em;
-  margin: 0rem 0px;
+  top: 11em;
+  /* left: 5em; */
+  margin: 0rem auto;
   padding: 0px 96px;
-  font-size: 20px;
   font-weight: bolder;
-  /* background-color: hotpink; */
-  width: 30em;
   align-self: center;
   text-align: center;
+
+  border: 3px solid yellowgreen;
 }
 
 .img-container-wrapper {
-  margin: 12rem 0rem;
-  width: 20rem;
+  margin: 0rem auto;
+  width: 81%;
   text-align: center;
   align-items: center;
   justify-content: center;
   position: relative;
-  left: 2rem;
-  top: 4rem;
-  /* background-color: gold; */
+  /* left: 2rem; */
+  /* top: 4rem; */
+  border: 3px solid whitesmoke;
 }
 
 .img-container {
@@ -49,37 +61,32 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "img1 img2 img3";
   position: relative;
-  margin: 2rem 6rem;
+  margin: 2rem auto;
   padding: 0px 0px;
-  bottom: 0rem;
-  top: 1rem;
-  left: 1rem;
-  right: 0rem;
+  width: 90%;
+  height: 100%;
 }
 
 .img1 {
   grid-area: img1;
-  margin: 0.1rem 2rem;
-  padding: 24px 26px;
   background-color: blueviolet;
-  width: 18rem;
-  height: 16rem;
 }
 .img2 {
   grid-area: img2;
-  margin: 0.1rem 2rem;
-  padding: 24px 26px;
   background-color: cyan;
-  width: 18rem;
-  height: 16rem;
 }
 .img3 {
   grid-area: img3;
-  margin: 0.1rem 2rem;
-  padding: 24px 26px;
   background-color: darkorange;
-  width: 18rem;
-  height: 16rem;
+}
+
+.img1, .img2, .img3 {
+  position: relative;
+  margin: 1rem auto;
+  margin-left: 10px;
+  padding: 24px 26px;
+  /* width: 18rem;
+  height: 16rem; */
 }
 
 @import "https://fonts.googleapis.com/css?family=Lily+Script+One";
@@ -87,21 +94,24 @@
 .card-wrapper {
   font-family: "Lily Script One";
   position: relative;
-  margin: 0.1rem 2rem;
-  padding: 24px 26px;
-  top: 7rem;
-  left: 1rem;
+  margin: 3rem auto;
+  width: 80%;
+  /* padding: 24px 26px; */
+  /* top: 7rem; */
+  /* left: 1rem; */
+  border: 3px solid #a27676;
 }
 
 .card {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   width: 300px;
   height: 300px;
-  margin: -150px;
-  float: left;
+  /* margin: -150px; */
+  /* float: left; */
   perspective: 500px;
+  border: 3px solid #f3efef;
 }
 
 .content {
