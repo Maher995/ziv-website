@@ -18,14 +18,16 @@ body {
 }
 
 .main {
-  background: #424442d4;
+  /* background: #424442d4; */
+  background: #d7c6c4;
   color: white;
   font-family: "Grandstander", cursive;
   position: relative;
   margin: 0 auto;
   min-width: 800px;
   max-width: 1600px;
-  width: 100%;
+  width: 1263px;
+
 
   display: grid;
   grid-template-rows: 63px auto;
@@ -35,12 +37,13 @@ body {
     "PageContent";
 
   /* for now only */
-  border: 3px solid red;
+  /* border: 3px solid red; */
 }
 
 .navbar {
   grid-area: navbar;
-  background: rgb(95 95 95);
+  /* background: rgb(95 95 95); */
+  background:#815752;
   margin: 0;
   padding: 0;
   position: relative;
@@ -53,7 +56,7 @@ body {
   width: 100%;
 
   /* for now only */
-  border: 3px solid yellow;
+  /* border: 3px solid yellow; */
 }
 
 .pageName {
@@ -68,7 +71,7 @@ body {
 
 /* add '#' before "id" */
 #title {
-  color: darkseagreen;
+  color: #d7c6c4;
   font-family: "Courier New", Courier, monospace;
   left: 4rem;
   top: 0rem;
@@ -81,11 +84,11 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  border: 3px solid #ab42e5;
+  /* border: 3px solid #ab42e5; */
 }
 
 .navbar-btn-container {
-  background: #736a64;
+  background: #a48885;
   position: absolute;
   /* padding: 0rem 0rem; */
   margin: 0 auto;
@@ -108,7 +111,7 @@ body {
 .navbar-btn {
   position: relative;
   background: inherit;
-  color: #8cc394;
+  color: #ffffff;
   font-size: 1em;
   border: 0px solid #4a4848;
   padding: 7px;
@@ -131,7 +134,7 @@ body {
   position: relative;
 
   /* for now only */
-  border: 10px solid #0f59be;
+  /* border: 10px solid #0f59be; */
 }
 
 .back-to-top-btn {

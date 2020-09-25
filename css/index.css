@@ -1,58 +1,91 @@
-/* .birthday-card {
+.birthday-card-wrapper {
   position: relative;
-  padding: 0rem 0rem;
-  margin: 0rem auto;
-  width: 50%;
-  left: 15rem;
-  top: 0rem;
-  max-width: 60rem;
-  background-color: blue;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 400px 1fr;
+  grid-template-areas: "birthday-photos birthday-card";
+  /* border: 3px solid whitesmoke; */
 }
 
-.birthday-card img {
+.birthday-photos {
+  grid-area: birthday-photos;
   position: relative;
-  width: 100%;
-  height: 100%;
-  top: 2em;
-} */
+  margin: 0 auto;
+  /* width: 300px; */
+  /* height: 250px; */
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas: " birthday-photo1" "birthday-photo2" "birthday-photo3";
+  /* border: 3px solid whitesmoke; */
+}
+
+.birthday-photo1 {
+  grid-area: birthday-photo1;
+  position: absolute;
+  top: 50px;
+
+  /* border: 3px solid rgb(172, 34, 34); */
+}
+.birthday-photo2 {
+  grid-area: birthday-photo2;
+  /* border: 3px solid rgb(226, 226, 226); */
+}
+.birthday-photo3 {
+  grid-area: birthday-photo3;
+  /* border: 3px solid rgb(82, 95, 214); */
+}
+
+.birthday-photo1,
+.birthday-photo2,
+.birthday-photo3 {
+  margin: 0 auto;
+  /* margin-top: 3px; */
+  margin-bottom: 18px;
+}
 
 .birthday-card {
+  grid-area: birthday-card;
   background: url("../img/HomePage/birthday-frame.png");
+  background-repeat: no-repeat;
   position: relative;
   margin: 2rem auto;
-  width: 512px;
-  height: 500px;
+  width: 800px;
+  height: 600px;
   /* left: 15rem; */
   /* top: 0rem; */
   max-width: 60rem;
-  border: 3px solid whitesmoke;
+  /* border: 3px solid whitesmoke; */
 }
 
 .p1 {
   position: absolute;
   font-family: "Amatic SC", cursive;
   color: rgb(0, 0, 0);
-  top: 11em;
-  /* left: 5em; */
+  top: 12em;
+  left: 145px;
+  height: 363px;
+  width: 440px;
   margin: 0rem auto;
-  padding: 0px 96px;
+  /* padding: 0px 96px; */
   font-weight: bolder;
   align-self: center;
   text-align: center;
-
-  border: 3px solid yellowgreen;
+  /* border: 3px solid yellowgreen; */
 }
 
 .img-container-wrapper {
   margin: 0rem auto;
   width: 81%;
+  height: 20rem;
   text-align: center;
   align-items: center;
   justify-content: center;
   position: relative;
   /* left: 2rem; */
   /* top: 4rem; */
-  border: 3px solid whitesmoke;
+  /* border: 3px solid whitesmoke; */
 }
 
 .img-container {
@@ -61,32 +94,46 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "img1 img2 img3";
   position: relative;
-  margin: 2rem auto;
+  margin: 0 auto;
   padding: 0px 0px;
   width: 90%;
   height: 100%;
+  /* border: 3px solid black; */
 }
 
 .img1 {
   grid-area: img1;
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
 }
 .img2 {
   grid-area: img2;
-  background-color: cyan;
+  /* background-color: cyan; */
 }
 .img3 {
   grid-area: img3;
-  background-color: darkorange;
+  /* background-color: darkorange; */
 }
 
-.img1, .img2, .img3 {
-  position: relative;
+.img1,
+.img2,
+.img3 {
+  position: absolute;
   margin: 1rem auto;
   margin-left: 10px;
   padding: 24px 26px;
   /* width: 18rem;
   height: 16rem; */
+  max-width: calc(100% - 10px);
+  max-height: calc(100% - 35px);
+}
+.img1 p,
+.img2 p,
+.img3 p {
+  position: relative;
+  margin: 0 auto;
+  height: 250px;
+  width: 250px;
+  border: 2px solid yellowgreen;
 }
 
 @import "https://fonts.googleapis.com/css?family=Lily+Script+One";
@@ -94,24 +141,33 @@
 .card-wrapper {
   font-family: "Lily Script One";
   position: relative;
-  margin: 3rem auto;
+  margin: 0px auto;
   width: 80%;
   /* padding: 24px 26px; */
-  /* top: 7rem; */
+  top: 4px;
   /* left: 1rem; */
-  border: 3px solid #a27676;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "vid-1 vid-2";
+  /* border: 3px solid #a27676; */
 }
 
+.vid-1 {
+  grid-area: vid-1;
+}
+.vid-2 {
+  grid-area: vid-2;
+}
 .card {
   position: relative;
-  top: 50%;
-  left: 50%;
   width: 300px;
   height: 300px;
+  margin: 0 auto;
   /* margin: -150px; */
   /* float: left; */
   perspective: 500px;
-  border: 3px solid #f3efef;
+  /* border: 3px solid #f3efef; */
 }
 
 .content {
@@ -135,14 +191,19 @@
   height: 100%;
   width: 100%;
   background: white;
-  line-height: 300px;
+  line-height: 58px;
   color: #03446a;
   text-align: center;
-  font-size: 60px;
+  font-size: 28px;
+  font-weight: 500;
   border-radius: 5px;
   backface-visibility: hidden;
 }
 
+.front p {
+  margin: 0 auto;
+  margin-top: 88px;
+}
 .back {
   background: #03446a;
   color: white;
