@@ -141,7 +141,7 @@ body {
   left: 2rem;
 }
 
-@media (max-width: 385px) {
+@media (max-width: 600px) {
   .navbar {
     position: relative;
     display: grid;
