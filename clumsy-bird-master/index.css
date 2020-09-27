@@ -41,26 +41,25 @@ body {
 }
 
 @font-face {
-  font-family: 'gamefont';
-  src: url('data/css/gamefont.eot');
-  src: url('data/css/gamefont.eot?#iefix') format('embedded-opentype'),
-     url('data/css/gamefont.woff') format('woff'),
-     url('data/css/gamefont.ttf') format('truetype'),
-     url('data/css/gamefont.svg#gamefont') format('svg');
+  font-family: "gamefont";
+  src: url("data/css/gamefont.eot");
+  src: url("data/css/gamefont.eot?#iefix") format("embedded-opentype"),
+    url("data/css/gamefont.woff") format("woff"),
+    url("data/css/gamefont.ttf") format("truetype"),
+    url("data/css/gamefont.svg#gamefont") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 .google {
   position: absolute;
-  left:23%;
+  left: 23%;
 }
-
 
 .navbar {
   grid-area: navbar;
   /* background: rgb(95 95 95); */
-  background:#815752;
+  background: #815752;
   margin: 0;
   padding: 0;
   position: relative;
@@ -75,7 +74,6 @@ body {
   /* for now only */
   /* border: 3px solid yellow; */
 }
-
 
 .pageName {
   grid-area: pageName;
@@ -141,4 +139,83 @@ body {
   align-content: center;
   top: 0.7rem;
   left: 2rem;
+}
+
+@media (max-width: 375px) {
+  .navbar {
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 60px 1fr;
+    width: 100%;
+  }
+
+  .pageName {
+    grid-area: pageName;
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  /* add '#' before "id" */
+  #title {
+    color: #d7c6c4;
+    font-family: "Courier New", Courier, monospace;
+    left: 4rem;
+    top: 0rem;
+  }
+
+  .navbar-btn-wrapper {
+    box-sizing: border-box;
+    grid-area: navbar-btn;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* border: 3px solid #ab42e5; */
+  }
+
+  .navbar-btn-container {
+    background: #a48885;
+    position: relative;
+    /* padding: 0rem 0rem; */
+    margin: 0 auto;
+    top: 3px;
+    /* left: 28rem; */
+    bottom: 0px;
+    right: 0px;
+    border: 0px solid #4a4848;
+    border-radius: 35px;
+    width: 239px;
+    height: 65px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "btn btn btn " "btn btn btn ";
+  }
+
+  .navbar .navbar-btn-container li {
+    display: inline-block;
+  }
+
+  .navbar-btn {
+    grid-area: btn;
+    position: relative;
+    background: inherit;
+    color: #ffffff;
+    font-size: 1em;
+    border: 0px solid #4a4848;
+    padding: 0;
+    margin: 0rem auto;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    align-self: center;
+    align-content: center;
+    top: 0.7rem;
+    left: 0;
+  }
 }
